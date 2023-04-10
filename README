@@ -1,0 +1,16 @@
+The TARMAC framework for Trigger Activation
+===========================================
+Implemented MERO and TARMAC for Trojan Detection
+
+benchmarks should be in folder benchmarks/
+
+tests are generated in folder tests/
+including random test and tarmac tests
+
+Trojan files are generated in Trojans_theta_{threshold}/{bench}.v_{numTriggers}.trojan_{numTrojans}
+
+Required library:
+Z3
+change Makefile to point to z3++.h and libz3.so
+config .bashrc
+Add libz3.so path to LD_LIBRARY_PATH
