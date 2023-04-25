@@ -153,6 +153,7 @@ void Graph::evaluate(std::shared_ptr<Edge> &edg) {
         for (auto &edg : (*it)->inEdges) maxDelay = std::max(edg->delay, maxDelay);
         auto &edg = (*it)->outEdge;
         edg->delay = (edg->newVal != edg->oldVal) ? (maxDelay + 1) : 0;
+        it++;
     }
 }
 
